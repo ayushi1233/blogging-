@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Products | Blogging Minds</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		 <style>
+		 body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding-top:100px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+#content{
+    min-height: 600px;
+  background-color: white;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+/* Standard syntax */
+
+@keyframes example {
+  0%   {background-color: #A8A8A8;}
+  25%  {background-color: #B0B0B0;}
+  50%  {background-color: #DCDCDC;}
+  100% {background-color: #D3D3D3;}
+}
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url("p.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#cameras:before, #watches:before, #market:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+
+.red{
+    color:red;
+}
+
+#settings-container{
+    margin-bottom:10px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+.remove_item_link{
+    color:#0000ff;
+}
+
+		 </style>
+    </head>
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Blogging Minds</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href = "training.html"><span class = "glyphicon glyphicon-shopping-cart"></span> home </a></li>
+                        <li><a id="link1" href = "#"><span class = "glyphicon glyphicon-user" onmouseover="account()"></span> profile</a></li>
+                        <li><a href = "logout_script.html"><span class = "glyphicon glyphicon-log-in"></span> signout</a></li>
+                    </ul>
+                </div>
+				<div id="div1" style="border:1px solid black;width:10px;height:5px;float:right;margin:auto;display:none;"><img src="account.png">
+				<a href="#" style="float:center;"><button> Your Blog</button></a>
+				</div>
+            </div>
+        </div>
+	
+
+        <div class="container" id="content">
+
+            <!-- Jumbotron Header -->
+            <div class="jumbotron home-spacer" id="products-jumbotron">
+                <h1 style="text-align:center;">Let's Started With Blogging Minds</h1>
+               
+            </div>
+            <hr>
+
+            <div class="row text-center" id="cameras">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="template.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="template2.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="ia.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="trav.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="watches">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="poetry.jpg" alt="">
+                        <div class="caption">
+                 
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="fa.jpg" alt="">
+                        <div class="caption">
+      
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="trad.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="politics.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="market">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="market.jpg" alt="">
+                        <div class="caption">
+                            
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="hotel.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="fest.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="login.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="temp.jpg" alt="">
+                        <div class="caption">
+                            <p><a href="a.html" role="button" class="btn btn-info btn-block">Read Now</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+		
+        <footer>
+            <div class="container">
+                <center>
+                    <p>Copyright &copy; Blogging Minds. All Rights Reserved  |  Contact Us: +91 9006848500</p>	
+                </center>
+            </div>
+        </footer>
+		<script>
+$(document).ready(function(){
+  $("#link1").click(function(){
+    $("#div1").toggle("slow");
+  });
+});
+</script>
+    </body>
+</html>

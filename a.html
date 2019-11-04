@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+  body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding-top:100px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+#content{
+    min-height: 600px;
+}
+
+#banner_image {
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url("p.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#banner_content {
+    position: relative;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    background-color: rgba(0, 0, 0, 0.7);
+    max-width: 660px;
+}
+
+#item_list {
+    padding-top: 50px;
+}
+
+/*This code ensures that when we navigate to a particular section of a page, the section does not get lost behind the header*/
+#cameras:before, #watches:before, #shirts:before{
+    display: block; 
+    content: " "; 
+    margin-top: -85px; 
+    height: 85px; 
+    visibility: hidden;
+}
+
+
+#login-panel .panel-footer{
+    font-weight:normal;
+}
+
+footer {
+    padding: 10px 0;
+    background-color: #101010;
+    color:#9d9d9d;
+    bottom: 0;
+    width: 100%;
+}
+
+.red{
+    color:red;
+}
+
+#settings-container{
+    margin-bottom:10px;
+}
+
+.navbar-brand{
+    font-size:20px;
+}
+
+@media(max-width:768px) {
+    #banner_content {
+        padding-bottom: 15%;
+    }
+    footer{
+        text-align:left;
+    }
+}
+
+.remove_item_link{
+    color:#0000ff;
+}
+
+img{
+float:right;
+}
+p{
+display:none;
+float:left;
+}
+h1{
+font-size:50px;
+font-weight:bold;
+font-family:Berlin Sans FB;
+text-align:center;
+}
+</style>
+</head>
+<body>
+ <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Blogging Minds</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<div class="container-fluid">
+  <h1>Blogs of the day</h1>
+  <br><br>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-6" >
+     <p id="p1">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        <br>
+	</p><img id="id1" src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;" onmouseover="fun()">
+	<a onclick="fun1()"><span class="glyphicon-glyphicon-thumbs-up" class="like"></span></a>
+	<a onclick="fun2()"><span class="glyphicon-glyphicon-thumbs-down" class="dislike"></span></a>
+    </div>
+    <div class="col-sm-6" >
+     <p id="p2">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        <br>
+	</p><img id="id2" src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;" onmouseover="fun()">
+	<a onclick="fun1()"><span class="glyphicon-glyphicon-thumbs-up" class="like"></span></a>
+	<a onclick="fun2()"><span class="glyphicon-glyphicon-thumbs-down" class="dislike"></span></a>
+    </div>
+  </div><br>
+  <br>
+  <div class="row">
+    <div class="col-sm-6" >
+     <p id="p3">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        <br>
+	</p><img id="id3" src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;" onmouseover="fun()">
+	<a onclick="fun1()"><span class="glyphicon-glyphicon-thumbs-up" class="like"></span></a>
+	<a onclick="fun2()"><span class="glyphicon-glyphicon-thumbs-down" class="dislike"></span></a>
+    </div>
+    <div class="col-sm-6" >
+     <p id="p4">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        <br>
+	</p><img id="id4" src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;" onmouseover="fun()">
+	<a onclick="fun1()"><span class="glyphicon-glyphicon-thumbs-up" class="like"></span></a>
+	<a onclick="fun2()"><span class="glyphicon-glyphicon-thumbs-down" class="dislike"></span></a>
+    </div>
+  </div>
+</div>
+ <footer>
+            <div class="container">
+                <center>
+                    <p>Copyright &copy; Blogging Minds. All Rights Reserved  |  Contact Us: +91 9006848500</p>	
+                </center>
+            </div>
+        </footer>
+<script>
+$(document).ready(function(){
+  $("#id1").click(function(){
+    $("#p1").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id2").click(function(){
+    $("#p2").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id3").click(function(){
+    $("#p3").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id4").click(function(){
+    $("#p4").toggle("slow");
+  });
+});
+</script>
+<script>
+function fun1()
+{
+document.getElementByClass("like").style.color="blue";
+}
+</script>
+<script>
+function fun2()
+{
+document.getElementByClass("dislike").style.color="blue";
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+</head>
+<style>
+img{
+float:right;
+}
+p{
+display:none;
+float:left;
+}
+table,td{
+cellpadding:4px;
+cellspacing:4px;
+
+}
+
+h1{
+font-size:50px;
+font-weight:bold;
+font-family:Berlin Sans FB;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h1>Blogs of the day</h1>
+<div class="container">    
+  <table class="table table-striped">
+    <tbody>
+	<thead>
+	<tr>
+	<th colspan="1"></th>
+      <tr>
+        <td><p id="p1">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        <br>
+	</p><img id="id1"src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;"onmouseover="fun()">
+		</td>
+		  <td><p id="p4">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        <br>
+	</p><img id="id4"src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;"onmouseover="fun()">
+		</td>
+      </tr>
+      <tr>
+        <td><p id="p2">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        <br></p><img id="id2"src="template2.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;">
+		</td>
+		 <td><p id="p5">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        ”<br>
+	</p><img id="id5"src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;"onmouseover="fun()">
+		</td>
+      </tr>
+      <tr>
+        <td><p id="p3">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        ”<br></p><img id="id3" src="template3.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;">
+		</td>
+		 <td><p id="p6">My friends think I'm outgoing.<br> My best friends think I'm absolutely insane.<br> 
+		"Friendship is the hardest thing in the world to explain.<br>
+		It's not something you learn in school.<br> But if you haven't learned the meaning of friendship,<br>you really haven't learned anything."<br>
+		“Friendship is born at that moment when one person says to another,<br> ‘What! You too? I thought I was the only one.<br>
+         “True friendship comes when the silence <br>between two people is comfortable.”<br>
+        ”<br>
+	</p><img id="id6"src="template1.jpg" alt="user" style="width:170px;height:170px;margin-left:15px;"onmouseover="fun()">
+		</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+<script>
+$(document).ready(function(){
+  $("#id1").click(function(){
+    $("#p1").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id2").click(function(){
+    $("#p2").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id3").click(function(){
+    $("#p3").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id4").click(function(){
+    $("#p4").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id5").click(function(){
+    $("#p5").toggle("slow");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#id6").click(function(){
+    $("#p6").toggle("slow");
+  });
+});
+</script>
+
+
+<script>
+function fun()
+{
+document.getElementById("id1").text="wanna try it";
+}
+</script>
+</body>
+</html>
